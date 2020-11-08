@@ -6,11 +6,6 @@ pipeline {
                 bat "IF exist reminder_part1 ( rmdir /Q /S reminder_part1 )"
             }
         }
-        stage('clone repo') {
-            steps {
-                bat "git clone https://github.com/TomYelnikoff/reminder_part1.git"
-            }
-        }
         stage('Run code') {
             steps {
                 
