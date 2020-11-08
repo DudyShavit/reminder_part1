@@ -1,11 +1,6 @@
 pipeline {
     agent any
     stages {
-        stage('clean repository') {
-            steps {
-                bat "IF exist reminder_part1 ( rmdir /Q /S reminder_part1 )"
-            }
-        }
         stage('Run code') {
             steps {
                 
