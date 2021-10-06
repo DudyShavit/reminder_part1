@@ -4,7 +4,7 @@ pipeline {
         stage('Run code') {
             steps {
                 
-                bat "python.exe .\\reminder_part1\\reminder.py"
+                bat "python.exe reminder.py"
             }
         }
 
